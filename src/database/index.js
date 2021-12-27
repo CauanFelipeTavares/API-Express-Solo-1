@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-require('dotenv/config')
+require('dotenv/config').config()
 
-mongoose.connect("mongodb+srv://Calires:felipe23@cluster0.v9dm3.mongodb.net/express1")
+mongoose.connect(process.env.DB_CLUSTER)
 
 mongoose.Promise = global.Promise
 
