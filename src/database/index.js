@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-require('dotenv/config').config()
+require('dotenv/config')
 
 mongoose.connect(process.env.DB_CLUSTER)
 
