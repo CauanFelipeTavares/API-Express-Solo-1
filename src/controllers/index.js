@@ -64,7 +64,7 @@ router.put('/put/:userId', async (req,res) => {
 })
 
 router.delete('/delete/:userId', async (req,res) => {
-    console.log(req.params.userId)
+    //console.log(req.params.userId)
     try {
         await UserModel.findByIdAndRemove(req.params.userId)
 
